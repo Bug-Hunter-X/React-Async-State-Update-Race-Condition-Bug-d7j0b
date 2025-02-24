@@ -1,0 +1,3 @@
+# React Async State Update Race Condition
+
+This repository demonstrates a common race condition bug in React components that handle asynchronous operations.  The `BuggyAsyncComponent.js` file showcases the problematic code, where a state update might fail if the component unmounts before the asynchronous operation completes. The `FixedAsyncComponent.js` file provides a solution using cleanup functions to prevent the race condition.
